@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Taller JavaScript || TODO</title>
+		<link
+			rel="stylesheet"
+			href="https://bootswatch.com/5/darkly/bootstrap.min.css"
+		/>
+		<style>
+			.btn-add {
+				margin-left: auto;
+			}
+			.task-completed {
+				text-decoration: line-through;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container py-3">
+			<h3 class="text-center text-success">Taller JavaScript || TODO</h3>
+
+			<div class="card my-4">
+				<div class="card-header">
+					<h4>Agregar Tarea</h4>
+				</div>
+				<div class="card-body">
+					<form id="form-task" complet="false">
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Escriba una tarea"
+							id="task"
+						/>
+
+						<button
+							class="btn btn-success d-block btn-add mt-1 px-5"
+							type="submit"
+						>
+							Agregar
+						</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<h4>Lista de Tareas</h4>
+				</div>
+				<div class="card-body">
+					<ul class="w-full" id="task-list">
+						<!-- cargaremos dinamicamenta las tareas -->
+						<!-- <li>
+							<p class="task-completed">Aqui va la tarea</p>
+							<button class="btn btn-primary">Hecho</button>
+							<button class="btn btn-danger">Eliminar</button>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script src="./assets/main.js"></script>
+	</body>
+</html>
